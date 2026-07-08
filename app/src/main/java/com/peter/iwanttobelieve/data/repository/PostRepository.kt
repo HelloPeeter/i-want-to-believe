@@ -15,11 +15,11 @@ class PostRepository @Inject constructor(
     private val userAuth: UserAuthDataSource,
     private val userRemote: UserRemoteDataSource
 ) {
-    suspend fun createPostWithImage(image: ByteArray, description: String): Result<Unit> {
+    suspend fun createPostWithImage(image: ByteArray?, description: String): Result<Unit> {
         return try {
 
             val userId = userAuth.getCurrentUserId()
-            val url = postRemote.uploadPostImage(userId, image)
+            val url = image?.let { postRemote.uploadPostImage(userId, it) } ?: ""
             val timestamp = Date()
 
             val post = Post(
