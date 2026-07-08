@@ -124,7 +124,8 @@ fun PostScreen(
                         TextButton(
                             onClick = {
                                 coroutineScope.launch {
-                                    selectedImageUri?.let { uri ->
+                                    val uri = selectedImageUri
+                                    if (uri != null) {
                                         val jpegByteArray =
                                             uriToJpegByteArray(context, uri, quality = 90)
                                         if (jpegByteArray != null) {
@@ -133,10 +134,15 @@ fun PostScreen(
                                                 description = description
                                             )
                                         }
+                                    } else {
+                                        viewModel.createPost(
+                                            image = null,
+                                            description = description
+                                        )
                                     }
                                 }
                             },
-                            enabled = selectedImageUri != null && description.isNotBlank() && !isLoading,
+                            enabled = description.isNotBlank() && !isLoading,
                             colors = ButtonDefaults.textButtonColors(
                                 contentColor = MaterialTheme.colorScheme.primary,
                                 disabledContentColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
@@ -229,6 +235,12 @@ fun PostScreen(
                         Text(
                             text = "Toque para escolher uma foto",
                             style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            text = "(opcional)",
+                            style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
