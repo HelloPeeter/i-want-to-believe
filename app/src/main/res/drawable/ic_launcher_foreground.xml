@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ícone "I want to believe": um disco voador visto de frente, sobrevoando a tela,
+  com um feixe de luz projetado para baixo — a assinatura visual da rede social.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1080">
+  <group
+      android:scaleX="0.6111111"
+      android:scaleY="0.6111111"
+      android:translateX="210"
+      android:translateY="210">
+
+    <!-- Feixe de luz (atrás do disco) -->
+    <path
+        android:pathData="M440,715 L640,715 L790,980 L290,980 Z"
+        android:fillColor="#663ECF6A" />
+
+    <!-- Cúpula -->
+    <path
+        android:pathData="M370,470 a170,160 0 1,0 340,0 a170,160 0 1,0 -340,0 Z"
+        android:fillColor="#3ECF6A" />
+
+    <!-- Reflexo de vidro na cúpula -->
+    <path
+        android:pathData="M445,400 a55,30 0 1,0 110,0 a55,30 0 1,0 -110,0 Z"
+        android:fillColor="#4DFFFFFF" />
+
+    <!-- Casco / disco -->
+    <path
+        android:pathData="M210,620 a330,95 0 1,0 660,0 a330,95 0 1,0 -660,0 Z"
+        android:fillColor="#E8F5EC" />
+
+    <!-- Sombra na borda inferior do casco -->
+    <path
+        android:pathData="M240,655 a300,35 0 1,0 600,0 a300,35 0 1,0 -600,0 Z"
+        android:fillColor="#99B9D9C2" />
+
+    <!-- Luzes de pouso -->
+    <path
+        android:pathData="M294,620 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0 Z"
+        android:fillColor="#C6303A" />
+    <path
+        android:pathData="M514,620 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0 Z"
+        android:fillColor="#C6303A" />
+    <path
+        android:pathData="M734,620 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0 Z"
+        android:fillColor="#C6303A" />
+  </group>
+</vector>

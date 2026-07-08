@@ -1,0 +1,60 @@
+<resources>
+    <!-- Nome do Aplicativo -->
+    <string name="app_name">I Want to Believe</string>
+
+    <!-- Gerais -->
+    <string name="error_network">Sem conexão de rede. Verifique sua internet e tente novamente.</string>
+    <string name="error_unknown">Erro desconhecido. Tente novamente mais tarde.</string>
+    <string name="error_permission_denied">Permissão negada.</string>
+    <string name="error_service_unavailable">Serviço indisponível. Tente novamente mais tarde.</string>
+    <string name="error_invalid_argument">Argumento inválido.</string>
+    <string name="error_operation_failed">Falha na operação. Tente novamente.</string>
+    <string name="error_cancelled">Operação cancelada.</string>
+
+    <!-- Firebase Auth -->
+    <string name="error_invalid_credentials">Credenciais inválidas.</string>
+    <string name="error_invalid_email">E-mail inválido.</string>
+    <string name="error_user_disabled">Conta desabilitada.</string>
+    <string name="error_user_not_found">Usuário não encontrado.</string>
+    <string name="error_email_already_in_use">E-mail já em uso.</string>
+    <string name="error_weak_password">Senha fraca. Escolha uma senha mais forte.</string>
+    <string name="error_wrong_password">Senha incorreta.</string>
+    <string name="error_too_many_requests">Muitas tentativas. Tente novamente mais tarde.</string>
+    <string name="error_operation_not_allowed">Operação não permitida.</string>
+    <string name="error_account_exists_different_credential">Conta já existe com outra credencial.</string>
+    <string name="error_invalid_credential">Credencial inválida.</string>
+    <string name="error_user_mismatch">Os usuários não correspondem.</string>
+    <string name="error_expired_action_code">Código expirado.</string>
+    <string name="error_invalid_verification_code">Código de verificação inválido.</string>
+    <string name="error_invalid_verification_id">ID de verificação inválido.</string>
+    <string name="error_reauthentication_failed">Falha na reautenticação. Faça login novamente e tente de novo.</string>
+
+    <!-- Data Source custom -->
+    <string name="error_user_not_logged_in">Usuário não está logado.</string>
+    <string name="error_user_not_saved">Falha ao salvar usuário.</string>
+    <string name="error_user_not_logged_in_successfully">Falha ao realizar login do usuário.</string>
+    <string name="error_update_password_failed">Falha ao atualizar a senha.</string>
+    <string name="error_update_email_failed">Falha ao atualizar o e-mail.</string>
+    <string name="error_null_user">Usuário inválido ou nulo.</string>
+
+    <!-- Firestore -->
+    <string name="error_document_not_found">Documento não encontrado.</string>
+    <string name="error_document_already_exists">Documento já existe.</string>
+    <string name="error_firestore_permission_denied">Ação não autorizada no Firestore.</string>
+    <string name="error_firestore_unavailable">Firestore indisponível.</string>
+    <string name="error_firestore_operation_failed">Falha na operação do Firestore.</string>
+    <string name="error_firestore_update_failed">Falha ao atualizar documento no Firestore.</string>
+    <string name="error_user_document_not_found">Documento do usuário não encontrado.</string>
+    <string name="error_user_conversion_failed">Falha ao converter documento do usuário.</string>
+
+    <!-- Storage -->
+    <string name="error_storage_object_not_found">Arquivo não encontrado no Storage.</string>
+    <string name="error_storage_not_authorized">Não autorizado a acessar o Storage.</string>
+    <string name="error_storage_quota_exceeded">Cota de armazenamento excedida.</string>
+    <string name="error_storage_retry_limit_exceeded">Limite de tentativas do Storage excedido.</string>
+    <string name="error_storage_not_authenticated">Não autenticado no Storage.</string>
+    <string name="error_image_upload_failed">Falha ao enviar imagem.</string>
+    <string name="error_image_not_saved">Falha ao salvar imagem.</string>
+    <string name="error_invalid_image_format">Formato de imagem inválido.</string>
+    <string name="error_download_url_failed">Falha ao obter URL de download da imagem.</string>
+</resources>
