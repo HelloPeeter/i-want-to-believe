@@ -51,7 +51,7 @@ class PostViewModel @Inject constructor(
         }
     }
 
-    fun createPost(image: ByteArray, description: String) {
+    fun createPost(image: ByteArray?, description: String) {
         viewModelScope.launch {
             try {
 
