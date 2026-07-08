@@ -252,17 +252,19 @@ fun Post(
 
             Spacer(modifier = Modifier.height(10.dp))
 
-            AsyncImage(
-                model = imageUrl,
-                contentDescription = "Imagem da publicação",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(260.dp)
-                    .clip(RoundedCornerShape(14.dp)),
-                contentScale = ContentScale.Crop
-            )
+            if (imageUrl.isNotBlank()) {
+                AsyncImage(
+                    model = imageUrl,
+                    contentDescription = "Imagem da publica莽茫o",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(260.dp)
+                        .clip(RoundedCornerShape(14.dp)),
+                    contentScale = ContentScale.Crop
+                )
 
-            Spacer(modifier = Modifier.height(4.dp))
+                Spacer(modifier = Modifier.height(4.dp))
+            }
 
             Row(
                 verticalAlignment = Alignment.CenterVertically
